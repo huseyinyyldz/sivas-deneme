@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivas - Cumhuriyet Şehri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SİVAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hakkinda">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarihi-eserler">Tarihi Eserler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lezzetler">Yöresel Lezzetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ilceler">İlçeler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kultur">Kültürel Faaliyetler</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">SİVAS</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Cumhuriyet Şehri</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hakkinda" class="section" data-aos="fade-up">
+            <h2>Hakkında</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://picsum.photos/600/400" alt="Sivas" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <p>Sivas, İç Anadolu'nun en önemli şehirlerinden biridir. Tarihi İpek Yolu üzerinde yer alan şehir, zengin tarihi ve kültürel mirası ile öne çıkar. 4 Eylül 1919'da Sivas Kongresi'ne ev sahipliği yapması ile Türkiye Cumhuriyeti'nin temellerinin atıldığı önemli şehirlerden biridir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diğer bölümler benzer yapıda devam eder -->
+        
+        <section id="tarihi-eserler" class="section" data-aos="fade-up">
+            <h2>Tarihi Eserler</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="Divriği Ulu Cami">
+                    <div class="card-body">
+                        <h5 class="card-title">Divriği Ulu Cami</h5>
+                        <p class="card-text">UNESCO Dünya Mirası Listesi'nde yer alan muhteşem bir yapı.</p>
+                        <a href="tarihi-eserler.html" class="btn btn-danger">Detaylı Bilgi</a>
+                    </div>
+                </div>
+                <!-- Diğer kartlar -->
+            </div>
+        </section>
+
+        <!-- Kategoriler (Keşfet) Bölümü -->
+        <section class="section" data-aos="fade-up">
+            <h2>Keşfet</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card">
+                        <i class="fas fa-landmark category-icon"></i>
+                        <h3>Tarihi Eserler</h3>
+                        <img src="https://picsum.photos/400/300" alt="Tarihi Eserler" class="img-fluid rounded mb-3">
+                        <p>Divriği Ulu Cami, Gök Medrese ve daha fazlası...</p>
+                        <a href="tarihi-eserler.html" class="btn btn-outline-danger">Keşfet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card">
+                        <i class="fas fa-utensils category-icon"></i>
+                        <h3>Yöresel Lezzetler</h3>
+                        <img src="https://picsum.photos/400/300" alt="Yöresel Lezzetler" class="img-fluid rounded mb-3">
+                        <p>Sivas Köftesi, Katmer ve yerel tatlar...</p>
+                        <a href="lezzetler.html" class="btn btn-outline-danger">Keşfet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card">
+                        <i class="fas fa-theater-masks category-icon"></i>
+                        <h3>Kültürel Miras</h3>
+                        <img src="https://picsum.photos/400/300" alt="Kültürel Miras" class="img-fluid rounded mb-3">
+                        <p>Festivaller, el sanatları ve gelenekler...</p>
+                        <a href="kultur.html" class="btn btn-outline-danger">Keşfet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Şehrimiz ve Tarihimiz Bölümü -->
+        <section class="history-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-5">Şehrimiz ve Tarihimiz</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://picsum.photos/600/400" alt="Tarihi Sivas" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="history-content">
+                            <p class="lead mb-4">Tarihin derinliklerinden gelen bir medeniyet...</p>
+                            <p>Sivas, Anadolu'nun en kadim şehirlerinden biri olarak, binlerce yıllık tarihi boyunca sayısız medeniyete ev sahipliği yapmıştır. M.Ö. 2000'li yıllara uzanan tarihi geçmişiyle Hitit, Roma, Bizans, Danişment, Selçuklu ve Osmanlı medeniyetlerinin izlerini taşıyan bu kadim şehir, her köşesinde tarihin canlı tanıklarını barındırmaktadır.</p>
+                            <p>Selçuklu döneminde bilim ve kültür merkezi haline gelen Sivas, dönemin en önemli medreselerine ev sahipliği yapmıştır. Şifahiye Medresesi, Çifte Minareli Medrese ve Gök Medrese gibi yapılar, dönemin mimari şaheserlerini günümüze taşımaktadır.</p>
+                            <p>4 Eylül 1919'da gerçekleşen Sivas Kongresi ile Milli Mücadele'nin en önemli dönüm noktalarından birine sahne olan şehrimiz, Cumhuriyet tarihimizin kuruluş aşamasında kritik bir rol oynamıştır. Mustafa Kemal Atatürk'ün 108 gün boyunca şehrimizde kalarak milli mücadeleyi yönettiği Sivas Kongresi, bağımsızlık yolunda atılan en önemli adımlardan biri olmuştur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Öne Çıkan Yerler -->
+        <section class="featured-places" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-5">Öne Çıkan Yerlerimiz</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/300" alt="Gök Medrese" class="img-fluid">
+                            <div class="featured-content">
+                                <h3>Gök Medrese</h3>
+                                <p>1271 yılında Selçuklu veziri Sahip Ata Fahrettin Ali tarafından yaptırılan, çini süslemeleriyle ünlü medrese. Taç kapısındaki muhteşem taş işçiliği ve geometrik desenlerle bezeli çinileri ile Selçuklu mimarisinin en güzel örneklerindendir.</p>
+                                <a href="tarihi-eserler.html#gok-medrese" class="btn btn-outline-danger">Detaylı Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/300" alt="Divriği Ulu Cami" class="img-fluid">
+                            <div class="featured-content">
+                                <h3>Divriği Ulu Cami</h3>
+                                <p>UNESCO Dünya Mirası Listesi'nde yer alan, 1228-1243 yılları arasında inşa edilen bu muhteşem yapı, benzersiz taş işçiliği ve geometrik desenleriyle dünya mimarlık tarihinin şaheserlerinden biridir.</p>
+                                <a href="tarihi-eserler.html#divrigi" class="btn btn-outline-danger">Detaylı Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/300" alt="Sivas Kongresi Binası" class="img-fluid">
+                            <div class="featured-content">
+                                <h3>Sivas Kongresi Binası</h3>
+                                <p>Milli Mücadele'nin dönüm noktalarından biri olan Sivas Kongresi'ne ev sahipliği yapan tarihi bina. Günümüzde müze olarak hizmet vermekte ve dönemin önemli belgelerini sergilemektedir.</p>
+                                <a href="tarihi-eserler.html#kongre" class="btn btn-outline-danger">Detaylı Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kültürel Mirasımız -->
+        <section class="cultural-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-5">Kültürel Mirasımız</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-music category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="Halk Müziği" class="img-fluid rounded mb-3">
+                            <h3>Halk Müziği</h3>
+                            <p>Sivas'ın zengin müzik kültürü, âşıklık geleneği ve yöresel türküleri, Anadolu'nun kültürel mozaiğinin en değerli parçalarındandır. Pir Sultan Abdal, Âşık Veysel ve Muzaffer Sarısözen gibi değerli halk ozanları bu topraklardan yetişmiştir.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-hands category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="El Sanatları" class="img-fluid rounded mb-3">
+                            <h3>El Sanatları</h3>
+                            <p>Sivas'ın geleneksel el sanatları arasında halıcılık, kilimcilik, bakırcılık ve bıçakçılık öne çıkar. Özellikle Sivas bıçağı ve Zara kilimi, yörenin en tanınmış el sanatı ürünlerindendir.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-theater-masks category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="Halk Oyunları" class="img-fluid rounded mb-3">
+                            <h3>Halk Oyunları</h3>
+                            <p>Sivas'ın zengin halk oyunları kültürü, yörenin yaşam tarzını ve geleneklerini yansıtır. Halay başta olmak üzere, çeşitli halk oyunları festivallerde ve düğünlerde yaşatılmaya devam etmektedir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-utensils category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="Mutfak Kültürü" class="img-fluid rounded mb-3">
+                            <h3>Mutfak Kültürü</h3>
+                            <p>Sivas mutfağı, yöresel lezzetleriyle Türk mutfak kültürünün önemli bir parçasıdır. Sivas köftesi, madımak, peskütan çorbası ve hingel gibi yemekler, yörenin gastronomi zenginliğini yansıtır.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-book category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="Halk Edebiyatı" class="img-fluid rounded mb-3">
+                            <h3>Halk Edebiyatı</h3>
+                            <p>Sivas, halk edebiyatının en önemli merkezlerinden biridir. Masallar, maniler, türküler ve halk hikayeleri, nesilden nesile aktarılarak yaşatılmaktadır.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="culture-card">
+                            <i class="fas fa-home category-icon"></i>
+                            <img src="https://picsum.photos/400/300" alt="Geleneksel Yaşam" class="img-fluid rounded mb-3">
+                            <h3>Geleneksel Yaşam</h3>
+                            <p>Sivas'ın geleneksel yaşam kültürü, düğünleri, bayram kutlamaları ve özel günleriyle Anadolu kültürünün en güzel örneklerini sergiler.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İlçelerimiz ve Harita Bölümü -->
+        <section class="districts-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-5">İlçelerimiz</h2>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="district-card">
+                            <img src="https://picsum.photos/400/300" alt="Divriği" class="img-fluid rounded">
+                            <div class="district-content">
+                                <h3>Divriği</h3>
+                                <p>UNESCO Dünya Mirası Listesi'nde yer alan Divriği Ulu Cami ve Darüşşifası ile ünlü ilçemiz. Selçuklu döneminin en önemli eserlerinden birini barındıran Divriği, tarihi dokusu ve kültürel zenginliği ile öne çıkar.</p>
+                                <span class="badge bg-danger">Tarihi Merkez</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="district-card">
+                            <img src="https://picsum.photos/400/300" alt="Zara" class="img-fluid rounded">
+                            <div class="district-content">
+                                <h3>Zara</h3>
+                                <p>Geleneksel el sanatları ve doğal güzellikleriyle ünlü ilçemiz. Özellikle Zara kilimi, yöresel el sanatlarının en güzel örneklerindendir. Tödürge Gölü gibi doğal güzelliklere ev sahipliği yapar.</p>
+                                <span class="badge bg-danger">Doğal Güzellikler</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="district-card">
+                            <img src="https://picsum.photos/400/300" alt="Şarkışla" class="img-fluid rounded">
+                            <div class="district-content">
+                                <h3>Şarkışla</h3>
+                                <p>Âşık Veysel gibi değerli halk ozanlarının memleketi. Halk müziği geleneğinin yaşatıldığı ilçemiz, aynı zamanda tarımsal üretimi ile de öne çıkar.</p>
+                                <span class="badge bg-danger">Kültür Merkezi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diğer İlçeler -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="district-card">
+                            <img src="https://picsum.photos/400/300" alt="Kangal" class="img-fluid rounded">
+                            <div class="district-content">
+                                <h3>Kangal</h3>
+                                <p>Dünyaca ünlü Kangal köpekleri ve şifalı Kangal Balıklı Kaplıcası ile tanınan ilçemiz. Hayvancılık ve termal turizm merkezi olarak öne çıkar.</p>
+                                <span class="badge bg-danger">Termal Merkez</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diğer ilçeler için benzer kartlar -->
+                </div>
+
+                <!-- Sivas Haritası -->
+                <div class="map-section mt-5">
+                    <h3 class="text-center mb-4">Sivas İli ve İlçeleri</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784357.6638670974!2d36.87873565!3d39.74792275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407c7445cd14d731%3A0xc51590cc37e59086!2sSivas!5e0!3m2!1str!2str!4v1647856254998!5m2!1str!2str"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="district-list mt-4">
+                        <h4 class="text-center mb-3">Sivas'ın İlçeleri</h4>
+                        <div class="row g-2 text-center">
+                            <div class="col-6 col-md-3">
+                                <div class="district-item">Akıncılar</div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="district-item">Altınyayla</div>
+                            </div>
+                            <!-- Diğer ilçeler -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+
+
+
+    <footer class="bg-danger text-white">
+        <div class="container py-4">
+            <p class="text-center mb-0">&copy; 2024 Sivas Tanıtım Sitesi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

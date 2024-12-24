@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #dc3545;
+    --secondary-color: #ffffff;
+    --accent-color: #8B0000;
+    --history-bg: #f8f4e9;
+    --culture-bg: #f3e9e9;
+    --food-bg: #fff5f5;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/1080');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.navbar {
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Yeni kategori ikonları için */
+.category-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Kategori kartları için  */
+.category-card {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(220,53,69,0.2);
+}
+
+/* Harita bölümü için deneme */
+.map-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Bölüm ayırıcıları  */
+.section-divider {
+    height: 4rem;
+    background-image: url('path-to-divider-image.png');
+    background-repeat: repeat-x;
+    opacity: 0.2;
+    margin: 2rem 0;
+}
+
+/* Yeni hover efektleri */
+.category-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-link img {
+    transition: transform 0.5s ease;
+}
+
+.category-link:hover img {
+    transform: scale(1.1);
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(220,53,69,0.9));
+    padding: 1rem;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.category-link:hover .category-overlay {
+    transform: translateY(0);
+}
+
+/* Yeni food-card (yöreseller falan) */
+.food-card {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(220,53,69,0.2);
+}
+
+.food-info {
+    padding: 1.5rem;
+}
+
+.food-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.food-info .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Kategori kartları  */
+.category-card img {
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-card .btn {
+    transition: all 0.3s ease;
+}
+
+.category-card .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Overlay efektleri deneme */
+.category-overlay .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.category-link:hover .category-overlay .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tarihi tema için yeni font ve renkler */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&display=swap');
+
+/* Başlıklar için tarihi font */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+/* Şehir ve Tarihçe bölümü */
+.history-section {
+    background-color: var(--history-bg);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.history-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background-image: url('path-to-ornament.png');
+    opacity: 0.2;
+}
+
+.history-content {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Bölüm ayırıcıları  */
+.section-divider {
+    height: 4rem;
+    background: url('path-to-ottoman-ornament.png') repeat-x center;
+    opacity: 0.15;
+    margin: 3rem 0;
+}
+
+/* Kategori bölümleri için arka plan renkleri */
+.historical-section {
+    background-color: var(--history-bg);
+    padding: 5rem 0;
+}
+
+.cultural-section {
+    background-color: var(--culture-bg);
+    padding: 5rem 0;
+}
+
+.food-section {
+    background-color: var(--food-bg);
+    padding: 5rem 0;
+}
+
+/* Öne çıkan yerler  */
+.featured-places {
+    background: linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.05));
+    padding: 5rem 0;
+}
+
+.featured-card {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(139,0,0,0.2);
+}
+
+.featured-content {
+    padding: 2rem;
+}
+
+.featured-content h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Harita bölümü tekrar deneme */
+.map-section {
+    background: linear-gradient(var(--history-bg), #fff);
+    padding: 6rem 0;
+    margin-top: 4rem;
+}
+
+/* İlçeler bölümü  */
+.districts-section {
+    background-color: var(--history-bg);
+    padding: 6rem 0;
+}
+
+.district-card {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.district-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(220,53,69,0.2);
+}
+
+.district-content {
+    padding: 1.5rem;
+}
+
+.district-content h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.district-content .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.district-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.district-item:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(220,53,69,0.3);
+}
+
+.map-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.map-container iframe {
+    display: block;
+}
+
+/***********/
+/* Tarihi Eserler Sayfası */
+.sub-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('path-to-historical-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.historical-monument {
+    padding: 5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.historical-monument:last-child {
+    border-bottom: none;
+}
+
+.monument-image {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.year-badge {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.monument-content {
+    padding: 2rem;
+    background: var(--history-bg);
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-badge {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.monument-details {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detail-item i {
+    color: var(--accent-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.lead {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .monument-content {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .year-badge {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
